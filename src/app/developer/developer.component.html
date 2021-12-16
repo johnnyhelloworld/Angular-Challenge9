@@ -1,0 +1,13 @@
+<div class="container">
+  <p>Last Name: {{ developer.lastName }}</p>
+  <p>First Name: {{ developer.firstName }}</p>
+  <p>Age: {{ developer.age }}</p>
+  <p>Sexe: {{ developer.sexe }}</p>
+  <p>Bio: {{ developer.bio }}</p>
+  <p>Skills:</p>
+  <ul>
+    <li *ngFor='let oneSkill of developer.skills'>
+      <app-skill [skill]='oneSkill'></app-skill>
+    </li>
+  </ul>
+</div>
